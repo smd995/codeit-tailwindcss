@@ -1,3 +1,3 @@
 export default function Home() {
-  return <>안녕 tailwind css!</>;
+  return <div className="bg-blue-600">안녕 tailwindcss plugin</div>;
 }
