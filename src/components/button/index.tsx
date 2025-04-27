@@ -24,7 +24,7 @@ type ButtonProps = {
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "outline" | "ghost" | "link";
   size?: "sm" | "md" | "lg";
-  fullwidth?: boolean;
+  fullWidth?: boolean;
   disabled?: boolean;
   className?: string;
   onClick: () => void;
@@ -34,7 +34,7 @@ const Button = ({
   children,
   variant = "primary",
   size = "md",
-  fullwidth = false,
+  fullWidth = false,
   disabled = false,
   className = "",
   onClick,
@@ -44,14 +44,14 @@ const Button = ({
     BASE_STYLES,
     VARIANT_STYLES[variant],
     SIZE_STYLES[size],
-    fullwidth && "w-full",
+    fullWidth && "w-full",
     disabled && DISABLED_STYLES,
     className,
   );
 
   return (
     <button
-      className={clsx(buttonClasses)}
+      className={buttonClasses}
       disabled={disabled}
       onClick={onClick}
       {...props}
