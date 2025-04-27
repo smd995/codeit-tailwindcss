@@ -1,3 +1,9 @@
+import JoinForm from "@/components/joinForm";
+
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <JoinForm></JoinForm>
+    </>
+  );
 }
